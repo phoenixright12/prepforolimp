@@ -10,18 +10,19 @@
       <img src="" alt="" class="logo" />
       <nav>
         <ul>
-          <li><a href="#">Регистрация</a></li>
-          <li><a href="#">Авторизация</a></li>
-          <li><a href="#">Личный кабинет</a></li>
-          <li><a href="#">Конкурсы</a></li>
-          <li><a href="#">Поиск</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Поменять тему</a></li>
+          <li><a href="./registration.html">Регистрация</a></li>
+          <li><a href="#authorization">Авторизация</a></li>
+          <li><a href="./account.html">Личный кабинет</a></li>
+          <li><a href="#competitions">Конкурсы</a></li>
+          <li><a href="#search">Поиск</a></li>
+          <li><a href="#footer">Контакты</a></li>
+          <li><a href="./index-light.html">Поменять тему</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="authorization">
+      <section class="authorization" id="authorization">
+        <h1 class="authorization">Войти в систему</h1>
         <form method="POST" action="/login">
           <input
             type="email"
@@ -71,9 +72,9 @@
           </div>
         </div>
       </section>
-      <section class="competitions">
+      <section class="competitions" id="competitions">
         <h2 class="competitions__title">Наши конкурсы</h2>
-        <search>
+        <search id="search">
           <form method="POST" action="/search">
             <input type="text" list="search" placeholder="Поиск конкурса" />
             <datalist id="search">
@@ -230,19 +231,19 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="contacts">
         <a href="">+7 (4842) 23-45-67</a>
         <a href="">family@cosmos.ru</a>
       </div>
       <nav>
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Главная-светлая</a></li>
-          <li><a href="#">Регистрация</a></li>
-          <li><a href="#">Конкурс</a></li>
-          <li><a href="#">Личный кабинет</a></li>
-          <li><a href="#">Страница не найдена</a></li>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./index-light.html">Главная-светлая</a></li>
+          <li><a href="./registration.html">Регистрация</a></li>
+          <li><a href="./schedule.html">Конкурс</a></li>
+          <li><a href="./account.html">Личный кабинет</a></li>
+          <li><a href="./404.html">Страница не найдена</a></li>
         </ul>
       </nav>
     </footer>

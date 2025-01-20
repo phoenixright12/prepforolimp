@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <main>
+      <h2>Регистрация</h2>
+      <form action="" method="post" novalidate>
+        <input type="email" placeholder="введите свою почту" required />
+        <div class="error-message">Пожалуйста введите свою почту</div>
+        <input type="text" placeholder="введите свое имя" required />
+        <div class="error-message">Пожалуйста введите свое имя</div>
+        <input type="text" placeholder="введите свою фамилию" required />
+        <div class="error-message">Пожалуйста введите свою фамилию</div>
+        <input
+          type="number"
+          placeholder="введите свой возраст номером"
+          required
+          min="14"
+        />
+        <div class="error-message">Пожалуйста введите свой возраст</div>
+        <input
+          type="text"
+          placeholder="введите свой возраст текстом"
+          required
+        />
+        <div class="error-message">Пожалуйста введите свой возраст</div>
+        <label for="female"
+          >Женский
+          <input type="radio" id="female" name="gender" />
+        </label>
+        <label for="male"
+          >Мужской
+          <input type="radio" id="male" name="gender" />
+        </label>
+        <input type="file" placeholder="загрузите семейное фото" required />
+        <input type="password" placeholder="введите пароль" required />
+        <input type="password" placeholder="повторите пароль" required />
+        <label for="consent"
+          >Согласен на обработку персональных данных
+
+          <input
+            type="checkbox"
+            name="consent"
+            placeholder="условия пользования"
+          />
+        </label>
+
+        <input type="text" placeholder="введите свое имя" required />
+        <div class="error-message">Пожалуйста введите свое имя</div>
+        <input type="text" placeholder="введите свою фамилию" required />
+        <div class="error-message">Пожалуйста введите свою фамилию</div>
+        <input
+          type="number"
+          placeholder="введите свой возраст номером"
+          required
+          min="14"
+        />
+        <div class="error-message">Пожалуйста введите свой возраст</div>
+        <input
+          type="text"
+          placeholder="введите свой возраст текстом"
+          required
+        />
+        <div class="error-message">Пожалуйста введите свой возраст</div>
+        <label for="gender"></label>
+        <select
+          name=""
+          id="gender"
+          required
+          aria-placeholder="выберете свой пол"
+        >
+          <option value="female">Женский</option>
+          <option value="male">Мужской</option>
+        </select>
+        <button type="button" class="remove-family-member">Удалить</button>
+        <button type="submit">Зарегестрироваться</button>
+      </form>
+    </main>
+    <footer>
+      <div class="contacts">
+        <a href="">+7 (4842) 23-45-67</a>
+        <a href="">family@cosmos.ru</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="#">Главная-светлая</a></li>
+          <li><a href="#">Конкурс</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+          <li><a href="#">Страница не найдена</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

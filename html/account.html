@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+  </head>
+  <body>
+    <main>
+      <section class="profile">
+        <nav><a href="./index.html">Выйти</a></nav>
+        <h2 class="profile__title">Записаться на конкурс</h2>
+        <form action="" method="post">
+          <label for="contest">Конкурс:</label>
+          <select
+            name=""
+            id="contest"
+            required
+            aria-placeholder="Выберите конкурс"
+          >
+            <option value="comp1">Конкурс 1</option>
+            <option value="comp2">Конкурс 2</option>
+            <option value="comp3">Конкурс 3</option>
+            <option value="comp4">Конкурс 4</option>
+            <option value="comp5">Конкурс 5</option>
+          </select>
+          <input
+            type="date"
+            placeholder="Выберете дату"
+            min="2024-07-08"
+            max="2024-07-08"
+            required
+          />
+          <input
+            type="time"
+            name=""
+            id=""
+            min="09:00"
+            max="21:00"
+            required
+            placeholder="Выберите время"
+          />
+          <input
+            type="number"
+            placeholder="Выберите колличество участников"
+            min="1"
+            max="20"
+            required
+          />
+          <button type="submit">Записаться</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
