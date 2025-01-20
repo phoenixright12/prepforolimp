@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>главная страница</title>
+  </head>
+  <body>
+    <header>
+      <img src="" alt="" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Регистрация</a></li>
+          <li><a href="#">Авторизация</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+          <li><a href="#">Конкурсы</a></li>
+          <li><a href="#">Поиск</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Поменять тему</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="authorization">
+        <form method="POST" action="/login">
+          <input
+            type="email"
+            name="email"
+            placeholder="Введите электронную почту"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Введите пароль"
+            name="password"
+            required
+          />
+          <button type="submit">Войти</button>
+        </form>
+        <a href="">Забыли пароль?</a>
+      </section>
+      <section class="about-us">
+        <h2 class="about-us__title">О нас</h2>
+        <p class="about-us__description">
+          Мы - команда профессионалов, которая занимается организацией и
+          проведением конкурсов. Наши конкурсы проходят в различных областях
+          искусства, таких как: музыка, танцы, живопись, литература и многое
+          другое. Мы стремимся к тому, чтобы каждый участник нашего конкурса
+          получил максимум удовольствия и положительных эмоций. Мы гарантируем
+          объективное судейство и честное голосование. Присоединяйтесь к нам и
+          станьте частью нашей дружной команды!
+        </p>
+        <img src="" alt="фото нашей команды" class="about-us__team-photo" />
+        <video src="" controls class="about-us__video">
+          <source src="media/video/hello.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает тег video.
+        </video>
+      </section>
+      <section class="hero">
+        <h2 class="hero__title">Конкурсы</h2>
+
+        <div class="hero__slider">
+          <h3 class="slider__desc"></h3>
+          <a href="#">Подробнее</a>
+          <div class="slider__rating">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <section class="competitions">
+        <h2 class="competitions__title">Наши конкурсы</h2>
+        <search>
+          <form method="POST" action="/search">
+            <input type="text" list="search" placeholder="Поиск конкурса" />
+            <datalist id="search">
+              <option value="Конкурс 1"></option>
+              <option value="Конкурс 2"></option>
+              <option value="Конкурс 3"></option>
+              <option value="Конкурс 4"></option>
+              <option value="Конкурс 5"></option>
+            </datalist>
+            <button type="submit">Поиск</button>
+          </form>
+        </search>
+        <div class="competitions__list">
+          <div class="competition">
+            <img src="" alt="" class="competition__photo" />
+            <h3 class="competition__title">Название конкурса</h3>
+            <p class="competition__description">
+              Описание конкурса. Описание конкурса. Описание конкурса. Описание
+            </p>
+            <p class="competition__registrations">Кол-во регистраций</p>
+            <a href="" class="competition__registr">регистрация на конкурс</a>
+            <div class="slider__rating">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="competition">
+            <img src="" alt="" class="competition__photo" />
+            <h3 class="competition__title">Название конкурса</h3>
+            <p class="competition__description">
+              Описание конкурса. Описание конкурса. Описание конкурса. Описание
+            </p>
+            <p class="competition__registrations">Кол-во регистраций</p>
+            <a href="" class="competition__registr">регистрация на конкурс</a>
+            <div class="slider__rating">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="competition">
+            <img src="" alt="" class="competition__photo" />
+            <h3 class="competition__title">Название конкурса</h3>
+            <p class="competition__description">
+              Описание конкурса. Описание конкурса. Описание конкурса. Описание
+            </p>
+            <p class="competition__registrations">Кол-во регистраций</p>
+            <a href="" class="competition__registr">регистрация на конкурс</a>
+            <div class="slider__rating">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="competition">
+            <img src="" alt="" class="competition__photo" />
+            <h3 class="competition__title">Название конкурса</h3>
+            <p class="competition__description">
+              Описание конкурса. Описание конкурса. Описание конкурса. Описание
+            </p>
+            <p class="competition__registrations">Кол-во регистраций</p>
+            <a href="" class="competition__registr">регистрация на конкурс</a>
+            <div class="slider__rating">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="competition">
+            <img src="" alt="" class="competition__photo" />
+            <h3 class="competition__title">Название конкурса</h3>
+            <p class="competition__description">
+              Описание конкурса. Описание конкурса. Описание конкурса. Описание
+            </p>
+            <p class="competition__registrations">Кол-во регистраций</p>
+            <a href="" class="competition__registr">регистрация на конкурс</a>
+            <div class="slider__rating">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__slider">
+          <div class="slider__container">
+            <h3 class="slider__title">Автор</h3>
+            <img src="" alt="тут картинка автора" />
+            <a href="" class="slider__link">Ccылка на другую страницу</a>
+            <p class="slider__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at
+              distinctio velit repellat pariatur est cum sed, eum ullam,
+              veritatis et eaque quis? Iste asperiores suscipit assumenda
+              deserunt eaque ipsam!
+            </p>
+            <p class="slider__date">12.08.2025</p>
+          </div>
+          <div class="slider__container">
+            <h3 class="slider__title">Автор</h3>
+            <img src="" alt="тут картинка автора" />
+            <a href="" class="slider__link">Ccылка на другую страницу</a>
+            <p class="slider__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at
+              distinctio velit repellat pariatur est cum sed, eum ullam,
+              veritatis et eaque quis? Iste asperiores suscipit assumenda
+              deserunt eaque ipsam!
+            </p>
+            <p class="slider__date">12.08.2025</p>
+          </div>
+          <div class="slider__container">
+            <h3 class="slider__title">Автор</h3>
+            <img src="" alt="тут картинка автора" />
+            <a href="" class="slider__link">Ccылка на другую страницу</a>
+            <p class="slider__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at
+              distinctio velit repellat pariatur est cum sed, eum ullam,
+              veritatis et eaque quis? Iste asperiores suscipit assumenda
+              deserunt eaque ipsam!
+            </p>
+            <p class="slider__date">12.08.2025</p>
+          </div>
+        </div>
+      </section>
+      <section class="anonsments">
+        <h2 class="anonsments__title">Анонсы</h2>
+        <form method="post">
+          <input type="email" placeholder="введите свою эл.почту" required />
+          <label for="consent"
+            >Условия пользования
+
+            <input
+              type="checkbox"
+              name="consent"
+              placeholder="условия пользования"
+            />
+          </label>
+          <button type="submit">Подписаться на рассылку</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="contacts">
+        <a href="">+7 (4842) 23-45-67</a>
+        <a href="">family@cosmos.ru</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Главная-светлая</a></li>
+          <li><a href="#">Регистрация</a></li>
+          <li><a href="#">Конкурс</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+          <li><a href="#">Страница не найдена</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
